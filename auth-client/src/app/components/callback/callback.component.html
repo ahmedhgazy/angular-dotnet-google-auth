@@ -1,0 +1,14 @@
+<div class="callback-container">
+  <div class="callback-card">
+    <div *ngIf="loading" class="loading">
+      <div class="spinner"></div>
+      <p>Processing your login...</p>
+    </div>
+    
+    <div *ngIf="error" class="error">
+      <h2>Authentication Error</h2>
+      <p>We couldn't authenticate you with Google. Please try again.</p>
+      <button routerLink="/login">Return to Login</button>
+    </div>
+  </div>
+</div>

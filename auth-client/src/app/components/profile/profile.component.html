@@ -1,0 +1,38 @@
+<div class="profile-container">
+  <div class="profile-card" *ngIf="!loading && user">
+    <div class="profile-header">
+      <div class="profile-avatar">
+        <img *ngIf="user.pictureUrl" [src]="user.pictureUrl" alt="Profile picture">
+        <div *ngIf="!user.pictureUrl" class="avatar-placeholder">{{ user.name.charAt(0) || 'U' }}</div>
+      </div>
+      <div class="profile-info">
+        <h1>{{ user.name }}</h1>
+        <p class="email">{{ user.email }}</p>
+        <p class="provider">Logged in with {{ user.provider }}</p>
+      </div>
+    </div>
+
+    <div class="profile-content">
+      <div class="profile-section">
+        <h2>Account Information</h2>
+        <div class="profile-detail">
+          <span class="label">Account ID:</span>
+          <span>{{ user.id }}</span>
+        </div>
+        <div class="profile-detail">
+          <span class="label">Provider:</span>
+          <span>{{ user.provider }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-actions">
+      <button class="logout-btn" (click)="logout()">Log Out</button>
+    </div>
+  </div>
+
+  <div class="loading" *ngIf="loading">
+    <div class="spinner"></div>
+    <p>Loading your profile...</p>
+  </div>
+</div>

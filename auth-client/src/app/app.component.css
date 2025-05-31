@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+  width: 100%;
+}
