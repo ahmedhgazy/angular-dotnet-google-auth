@@ -4,7 +4,7 @@ This project implements a secure authentication system using Angular for the fro
 
 ## Overview
 
-- **Frontend**: An Angular application (`auth-client`) that provides a user interface for login and interaction with the backend API.
+- **Frontend**: An Angular (v19) application (`auth-client`) that provides a user interface for login and interaction with the backend API.
 - **Backend**: A .NET API (`AuthApi`) that handles authentication, token generation, and user management, integrated with Google OAuth.
 
 ## Features
